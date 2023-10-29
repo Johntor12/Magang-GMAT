@@ -61,6 +61,54 @@ const Grafik = () => {
       pressure: 400,
       altitude: 200,
     },
+    {
+      teamid: 4,
+      clock: "15:15",
+      yaw: 228.4,
+      pitch: 200.0,
+      roll: 130.2,
+      latitude: -7.774381,
+      longitude: 110.367695,
+      voltage: 51,
+      pressure: 300,
+      altitude: 500,
+    },
+    {
+      teamid: 5,
+      clock: "16:15",
+      yaw: 300.5,
+      pitch: 400.0,
+      roll: 150.19,
+      latitude: -7.7639135,
+      longitude: 110.3868515,
+      voltage: 63,
+      pressure: 500,
+      altitude: 800,
+    },
+    {
+      teamid: 6,
+      clock: "16:25",
+      yaw: 394.5,
+      pitch: 37.0,
+      roll: 10.19,
+      latitude: -7.7652533,
+      longitude: 110.3676408,
+      voltage: 72,
+      pressure: 400,
+      altitude: 850,
+    },
+    {
+      teamid: 7,
+      clock: "16:35",
+      yaw: 180.2,
+      pitch: 320.9,
+      roll: 79.32,
+      latitude: -7.7652533,
+      longitude: 110.3676408,
+      voltage: 48,
+      pressure: 500,
+      altitude: 900,
+    },
   ];
 
   const formattedData = data.map((item) => ({
@@ -69,7 +117,7 @@ const Grafik = () => {
   }));
 
   return (
-    <div className="flex flex-col justify-center items-center w-full h-[full] gap-y-[50px]">
+    <div className="flex flex-col justify-center items-center w-full h-[full] gap-y-[50px] z-[10]">
       <div className="w-fit h-fit p-[20px] bg-[#323030] rounded-[40px]">
         <div className="text-[20px] ml-[75px] font-Inter font-bold text-[#789172] tracking-[.25em]">
           Data Chart

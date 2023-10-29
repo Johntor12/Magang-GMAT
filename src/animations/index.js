@@ -30,6 +30,9 @@ export const preLoaderAnim = () => {
             overflowY: "visible",
             overflowX: "hidden",
           });
+          tl.to(".preloader", {
+            display: "none",
+          });
         }, [1000]);
         tl.kill();
       },
